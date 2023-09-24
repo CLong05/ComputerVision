@@ -1,4 +1,4 @@
-本仓库内为2022年春季学期中山大学计算机学院计算机视觉的期末大作业。
+本仓库内为2022年春季学期中山大学计算机视觉课程的期末大作业。
 
 文件说明：
 
@@ -28,7 +28,7 @@
 
 ---
 
-This is the final assignment of the Computer Vision course of School of Computer Science & Engineering, Sun Yat-Sen University in the spring semester of 2022.
+This is the final assignment of the Computer Vision course, Sun Yat-Sen University in the spring semester of 2022.
 
 Document description:
 
