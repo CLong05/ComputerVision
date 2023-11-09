@@ -28,14 +28,16 @@
 
 说明：
 题目2.3共同组成一个图象区域判别器，具体过程如下
+
 1. 实现基于 Graphbased image segmentation 方法，将每张图分割为 50~70 个区域
 2. 提取每一个区域的归一化 RGB 颜色直方图特征  和全图的归一化 RGB 颜色直方图  
 3. 将每一个区域的颜色对比度特征定义为区域颜色直方图和全图颜色直方图的拼接  
 4. 采用PCA 算法对颜色对比度特征进行降维取前 20 维
 5. 构建 visual bag of words dictionary：
-  - 使用Kmeans聚类方法获得50个聚类中心点作为visual word；
-  - 计算颜色对比度特征和50个visual word特征的点积结果，得到50维数据；
-  - 再与之前PCA算法得到的20维数据拼接，得到70维的数据集。  
+   - 使用Kmeans聚类方法获得50个聚类中心点作为visual word；
+   - 计算颜色对比度特征和50个visual word特征的点积结果，得到50维数据；
+   - 再与之前PCA算法得到的20维数据拼接，得到70维的数据集。  
+
 6. 将该数据集作为训练集训练非线性SVM  ，使其能够判别图中区域属于前景还是背景    
 
 ---
@@ -70,12 +72,16 @@ Document description:
 
 Explanation:
 Task 2.3 together forms an image region discriminator, and the specific process is as follows:
+
 1. Implement the Graph-based image segmentation method to segment each image into 50-70 regions.
 2. Extract the normalized RGB color histogram features for each region and the entire image.
 3. Define the color contrast feature for each region as the concatenation of the region's color histogram and the global color histogram.
 4. Use the PCA algorithm to reduce the dimensionality of the color contrast features to the top 20 dimensions.
 5. Build a visual bag of words dictionary:
-  - Utilize the K-means clustering method to obtain 50 cluster centroids as visual words.
-  - Calculate the dot product between the color contrast features and the 50 visual word features, resulting in a 50-dimensional dataset.
-  - Concatenate the 20-dimensional data obtained from the PCA with the 50-dimensional data, resulting in a 70-dimensional dataset.
+   - Utilize the K-means clustering method to obtain 50 cluster centroids as visual words.
+   - Calculate the dot product between the color contrast features and the 50 visual word features, resulting in a 50-dimensional dataset.
+   - Concatenate the 20-dimensional data obtained from the PCA with the 50-dimensional data, resulting in a 70-dimensional dataset.
+
 6. Use the constructed dataset as the training set to train a non-linear SVM to classify image regions as foreground or background.
+
+
